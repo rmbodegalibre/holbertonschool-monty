@@ -1,3 +1,5 @@
+#include "monty.h"
+
 /**
  * main - monty
  * @argc: integer number of arguments
@@ -7,15 +9,15 @@
 
 int main(int argc, char **argv)
 {
-	if (argc < 2 || argc > 2)
+	if (argc != 2)
 	{
-		dprintf(2, "USAGE: monty file\n");
+		printf("USAGE: monty file\n");
 		exit(EXIT_FAILURE);
 	}
 	else
 	{
-/*Check for the file - if i get the path from argv*/
-/*		printf("First %s \n", argv[1]);*/
+		/*Check for the file - if i get the path from argv*/
+		/*		printf("First %s \n", argv[1]);*/
 		open_file(argv[1]);
 	}
 	m_free();
