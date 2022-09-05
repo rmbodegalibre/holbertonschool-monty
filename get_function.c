@@ -32,7 +32,6 @@ void get_function(char *code, char *value, int i)
 /*compare with strcmp what i got on code and in the current position*/
 		if (strcmp(code, function_list[j].opcode) == 0)
 		{
-/*			printf("es la funcion que necesito\n");*/
 /*call the function and pass the code and the value we have from the file*/
 			function_call(function_list[j].f, code, value, i);
 /*this is to know if it found the function*/
@@ -48,5 +47,4 @@ void get_function(char *code, char *value, int i)
 		m_free();
 		exit(EXIT_FAILURE);
 	}
-
 }
