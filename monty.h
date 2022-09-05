@@ -43,25 +43,25 @@ typedef struct instruction_s
 typedef void (*op_func)(stack_t **, unsigned int);
 extern stack_t *head;
 
-void o_file(char *file_path);
-void r_file(FILE *file, char *file_path);
-int tokenizar(char *, int, int);
+void open_file(char *file_path);
+void read_file(FILE *file, char *file_path);
+int tokeniza(char *, int, int);
 void get_function(char *, char *, int);
 void function_call(op_func, char *, char *, int);
 stack_t *new_node(int);
 
-void _push(stack_t **, unsigned int);
-void _pall(stack_t  **, unsigned int);
-void _pint(stack_t **, unsigned int);
-void _pop(stack_t  **, unsigned int);
-void _swap(stack_t  **, unsigned int);
-void _nop(stack_t  **, unsigned int);
-void _add(stack_t  **, unsigned int);
-void _sub(stack_t  **, unsigned int);
-void _mul(stack_t  **, unsigned int);
-void _div(stack_t  **, unsigned int);
-void _mod(stack_t  **, unsigned int);
-void _pchar(stack_t **, unsigned int);
-void _pstr(stack_t **, unsigned int);
-void _free(void);
+void oc_push(stack_t **, unsigned int);
+void oc_pall(stack_t  **, unsigned int);
+void oc_pint(stack_t **, unsigned int);
+void oc_pop(stack_t  **, unsigned int);
+void oc_swap(stack_t  **, unsigned int);
+void oc_nop(stack_t  **, unsigned int);
+void oc_add(stack_t  **, unsigned int);
+void oc_sub(stack_t  **, unsigned int);
+void oc_mul(stack_t  **, unsigned int);
+void oc_div(stack_t  **, unsigned int);
+void oc_mod(stack_t  **, unsigned int);
+void oc_pchar(stack_t **, unsigned int);
+void oc_pstr(stack_t **, unsigned int);
+void m_free(void);
 #endif
