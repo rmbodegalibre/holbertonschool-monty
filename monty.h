@@ -17,6 +17,7 @@
  * Description: doubly linked list node structure
  * for stack, queues, LIFO, FIFO
  */
+
 typedef struct stack_s
 {
 	int n;
@@ -32,6 +33,7 @@ typedef struct stack_s
  * Description: opcode and its function
  * for stack, queues, LIFO, FIFO
  */
+
 typedef struct instruction_s
 {
 	char *opcode;
@@ -61,7 +63,5 @@ void _div(stack_t  **, unsigned int);
 void _mod(stack_t  **, unsigned int);
 void _pchar(stack_t **, unsigned int);
 void _pstr(stack_t **, unsigned int);
-
 void _free(void);
-
 #endif
